@@ -124,7 +124,7 @@ H = model.fit_generator(aug.flow(trainX, trainY, batch_size=batch_size),
                         epochs=epochs, verbose=1)
 
 # save the model to disk
-model.save('gender_detection.model')
+model.save('gender_detection.h5')
 
 # plot training/validation loss/accuracy
 plt.style.use("ggplot")
